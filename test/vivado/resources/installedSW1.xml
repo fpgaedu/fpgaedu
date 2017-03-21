@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<unistallRegistries>
+    <uninstallRegistry>
+        <buildVersion>2016.4_0124_1</buildVersion>
+        <displayName>DocNav</displayName>
+        <displayVersion>2016.4</displayVersion>
+        <installedPath>/home/matthijsbos/Xilinx</installedPath>
+        <launchVlmString></launchVlmString>
+        <progGroupFolder>Xilinx Design Tools</progGroupFolder>
+        <refKey>DocNav_MODULE</refKey>
+        <regEntryName>/home/matthijsbos/Xilinx/.xinstall/DocNav</regEntryName>
+        <size>236459383</size>
+        <uninstallString>/home/matthijsbos/Xilinx/.xinstall/DocNav/xsetup -Uninstall</uninstallString>
+        <version>2016.4</version>
+        <xinstallPath>/home/matthijsbos/Xilinx/.xinstall/DocNav</xinstallPath>
+    </uninstallRegistry>
+    <uninstallRegistry>
+        <buildVersion>2016.4_0124_1</buildVersion>
+        <displayName>Xilinx Information Center</displayName>
+        <displayVersion>2016.4</displayVersion>
+        <installedPath>/home/matthijsbos/Xilinx</installedPath>
+        <launchVlmString></launchVlmString>
+        <progGroupFolder>Xilinx Design Tools</progGroupFolder>
+        <refKey>XiC_MODULE</refKey>
+        <regEntryName>/home/matthijsbos/Xilinx/.xinstall/xic</regEntryName>
+        <size>429022428</size>
+        <uninstallString>/home/matthijsbos/Xilinx/.xinstall/xic/xsetup -Uninstall</uninstallString>
+        <version>2016.4</version>
+        <xinstallPath>/home/matthijsbos/Xilinx/.xinstall/xic</xinstallPath>
+    </uninstallRegistry>
+    <uninstallRegistry>
+        <buildVersion>2016.4_0124_1</buildVersion>
+        <displayName>Vivado HL WebPACK</displayName>
+        <displayVersion>2016.4</displayVersion>
+        <installedPath>/home/matthijsbos/Xilinx</installedPath>
+        <launchVlmString>/home/matthijsbos/Xilinx/Vivado/2016.4/bin/vlm null</launchVlmString>
+        <progGroupFolder>Xilinx Design Tools</progGroupFolder>
+        <refKey>WebPACKEdition</refKey>
+        <regEntryName>/home/matthijsbos/Xilinx/.xinstall/Vivado_2016.4</regEntryName>
+        <size>-1717516833</size>
+        <uninstallString>/home/matthijsbos/Xilinx/.xinstall/Vivado_2016.4/xsetup -Uninstall</uninstallString>
+        <version>2016.4</version>
+        <xinstallPath>/home/matthijsbos/Xilinx/.xinstall/Vivado_2016.4</xinstallPath>
+    </uninstallRegistry>
+</unistallRegistries>
