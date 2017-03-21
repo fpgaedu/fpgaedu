@@ -1,0 +1,3 @@
+[submodule "fpgaedu/tcl"]
+	path = fpgaedu/tcl
+	url = git@github.com:fpgaedu/tcl.git
