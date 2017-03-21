@@ -4,6 +4,7 @@ import os
 import random
 import shutil
 import subprocess
+import tempfile
 import time
 import xml.etree.ElementTree as et
 
@@ -103,7 +104,7 @@ class Session:
         args = [self._vivado_path, '-mode', 'batch', '-nolog', '-nojournal',
                 '-notrace', '-source', self._tcl_init_script]
 
-        self._process = psutil.Popen(args, shell=False)
+        self._process = subprocess.Popen(args, shell=False, cwd=tempfile.mkdtemp(prefix='fpgaedu_session'))
 
         for _ in range(max(1, int(timeout))):
             try:
@@ -112,9 +113,9 @@ class Session:
             except fpgaedu.jsonrpc2.RpcError:
                 time.sleep(1)
                 continue
-        
-        self.stop()
 
+        # Timeout condition: kill all spawned processes and raise
+        self.stop()
         raise SessionTimeoutError
 
     def stop(self):
