@@ -83,3 +83,16 @@ class SessionTestCase(unittest.TestCase):
 
         with self.assertRaises(AssertionError):
             session.echo()
+
+    def test_program(self):
+
+        session = fpgaedu.vivado.Session()
+        session.start()
+
+        target = session.get_target_identifiers()[0]
+        device = session.get_device_identifiers(target)[0]
+        
+        with open("/home/matthijsbos/Dropbox/fpgaedu/python/fpgaedu/fpgaedu/tcl/test/resources/nexys4.bit", 'rb') as f:
+            bitstream_data = f.read()
+        
+        session.program(target, device, bitstream_data)
