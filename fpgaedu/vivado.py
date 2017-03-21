@@ -154,7 +154,17 @@ class Session:
         program_params = {
             'target': target,
             'device': device,
-            'bitstream': bitstream_base64
+            'bitstream': bitstream_base64.decode()
         }
 
         self._rpc_proxy.call('program', params=program_params)
+
+    def get_target_identifiers(self):
+        return self._rpc_proxy.call('getTargetIdentifiers')
+
+    def get_device_identifiers(self, target_identifier):
+
+        params = {
+            'targetIdentifier': target_identifier
+        }
+        return self._rpc_proxy.call('getDeviceIdentifiers', params=params)
