@@ -4,6 +4,6 @@ node {
       git 'https://github.com/fpgaedu/fpgaedu'
    }
    stage('Build') {
-        sh 'echo "hello world"'
+        sh 'echo "hello world2"'
    }
 }
