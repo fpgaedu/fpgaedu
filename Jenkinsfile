@@ -7,10 +7,10 @@ pipeline {
         }
         stage('Build') {
             steps {
-                node('ubuntu&&16.04&&x64&&vivado&&webpack&&2016.4&&nexys4) {
+                node('ubuntu&&16.04&&x64&&vivado&&webpack&&2016.4&&nexys4') {
                     echo 'hello ubuntu 16+vivado 2016.4 lab'
                 }
-                node('ubuntu&&16.04&&x64&&vivado&&lab&&2016.4&&nexys4) {
+                node('ubuntu&&16.04&&x64&&vivado&&lab&&2016.4&&nexys4') {
                     echo 'hello ubuntu 16+vivado 2016.4 lab'
                 }
             }
