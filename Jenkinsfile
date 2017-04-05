@@ -1,6 +1,7 @@
 // vi: set ft=groovy
 
 pipeline {
+    agent { label 'master' }
     stages {
         stage('Init') { // for display purposes
             steps {
