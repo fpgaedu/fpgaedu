@@ -3,7 +3,9 @@
 pipeline {
     stages {
         stage('Init') { // for display purposes
-            git 'https://github.com/fpgaedu/fpgaedu'
+            steps {
+                git 'https://github.com/fpgaedu/fpgaedu'
+            }
         }
         stage('Build') {
             steps {
