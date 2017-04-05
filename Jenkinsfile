@@ -1,4 +1,4 @@
-# vi: set ft=groovy
+// vi: set ft=groovy
 
 pipeline {
     stages {
